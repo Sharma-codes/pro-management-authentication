@@ -36,6 +36,7 @@ router
     .post(refreshAccessToken);
     
 router
+
     .route("/forgot-password")
     .post(userForgotPasswordValidator(), validate,  forgotPasswordRequest);
 
