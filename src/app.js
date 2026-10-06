@@ -25,11 +25,14 @@ app.use(
 import healthCheckRouter from "./routes/healthcheck.routes.js";
 
 import authRouter from "./routes/auth.routes.js";
+import projectRouter from "./routes/project.routes.js";
 
 
 app.use("/api/v1/healthcheck", healthCheckRouter);//app.use is middleware that mounts the healthCheckRouter on the "/api/v1/healthcheck" path. This means that any requests to this path will be handled by the healthCheckRouter.
 
 app.use("/api/v1/auth", authRouter);//app.use is middleware that mounts the authRouter on the "/api/v1/auth" path. This means that any requests to this path will be handled by the authRouter.
+
+app.use("/api/v1/projects", projectRouter);//app.use is middleware that mounts the projectRouter on the "/api/v1/projects" path. This means that any requests to this path will be handled by the projectRouter.
 
 
 

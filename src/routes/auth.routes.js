@@ -14,11 +14,13 @@ import{
 
 import { validate } from "../middlewares/validator.middleware.js";
 
-import { userRegisterValidator } from "../validators/index.js";
-import { userLoginValidator } from "../validators/index.js";
-import { userForgotPasswordValidator } from "../validators/index.js";
-import { userResetForgotPasswordValidator } from "../validators/index.js";
-import { userChangeCurrentPasswordValidator } from "../validators/index.js";
+import {
+    userChangeCurrentPasswordValidator,
+    userForgotPasswordValidator,
+    userLoginValidator,
+    userRegisterValidator,
+    userResetForgotPasswordValidator
+} from "../validators/index.js";
 
 import { verifyJWT } from "../middlewares/auth.middleware.js";
 
